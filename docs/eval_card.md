@@ -3,10 +3,10 @@
 Card này đi kèm mỗi báo cáo và được dùng lại ở Day 10.
 
 - **Run ID / eval set SHA:**
-  - Baseline (`swarm`): `E-swarm-20261118-ad28` · eval set SHA `ad28b9f4c337`
-  - PR đối chứng (`fixed`): `E-fixed-20261118-ad28` · eval set SHA `ad28b9f4c337`
-  - PR hồi quy (`seeded_regression`): `E-seeded_regression-20261118-ad28` · eval set SHA `ad28b9f4c337`
-- **Phiên bản:** code commit `e0edefe` (nhánh `starter/d09`) · eval set `v1` (SHA `ad28b9f4c337`) · `metric_spec_version: "1.0"` ([src/config/metric_spec.yaml](file:///d:/VinUni/Labs/K5-L3A-DAY09-PhamHongKhanhHuy-2A202603588-EvaluationandFailureAnalysis/src/config/metric_spec.yaml)) · grader `lab9.graders.GRADERS` · seeds `11, 22, 33, 44, 55` · Python `3.12.10` · backend `MockLLM`
+  - Baseline (`swarm`): `E-swarm-20261118-6a6a` · eval set SHA `6a6a84331682`
+  - PR đối chứng (`fixed`): `E-fixed-20261118-6a6a` · eval set SHA `6a6a84331682`
+  - PR hồi quy (`seeded_regression`): `E-seeded_regression-20261118-6a6a` · eval set SHA `6a6a84331682`
+- **Phiên bản:** code commit `e0edefe` (nhánh `starter/d09`) · eval set `v1` (SHA `6a6a84331682`) · `metric_spec_version: "1.0"` ([src/config/metric_spec.yaml](file:///d:/VinUni/Labs/K5-L3A-DAY09-PhamHongKhanhHuy-2A202603588-EvaluationandFailureAnalysis/src/config/metric_spec.yaml)) · grader `lab9.graders.GRADERS` · seeds `11, 22, 33, 44, 55` · Python `3.12.10` · backend `MockLLM`
 - **Eval set:** `v1` ([src/data/eval/eval_set_v1.jsonl](file:///d:/VinUni/Labs/K5-L3A-DAY09-PhamHongKhanhHuy-2A202603588-EvaluationandFailureAnalysis/src/data/eval/eval_set_v1.jsonl)), 14 item × 5 seed = 70 trials, nguồn `lab8_public` (`T01`–`T14`); nhãn tách riêng tại [src/data/eval/labels_v1.json](file:///d:/VinUni/Labs/K5-L3A-DAY09-PhamHongKhanhHuy-2A202603588-EvaluationandFailureAnalysis/src/data/eval/labels_v1.json) (không đặt inline trong item).
 
 ## Metric & ngưỡng (trích `config/metric_spec.yaml`)
@@ -29,7 +29,7 @@ Card này đi kèm mỗi báo cáo và được dùng lại ở Day 10.
 
 Bootstrap ghép cặp theo item (`n_resamples: 1000, method: percentile, rng: 2027, confidence: 0.95`):
 
-| Metric | Baseline `swarm` (`E-swarm-20261118-ad28`) | PR `fixed` (`E-fixed-20261118-ad28`) | Paired $\Delta$ & 95% CI (`fixed - swarm`) | Quyết định (`fixed`) | PR `seeded_regression` (`E-seeded_regression-20261118-ad28`) | Paired $\Delta$ & 95% CI (`seeded - swarm`) | Quyết định (`seeded_regression`) |
+| Metric | Baseline `swarm` (`E-swarm-20261118-6a6a`) | PR `fixed` (`E-fixed-20261118-6a6a`) | Paired $\Delta$ & 95% CI (`fixed - swarm`) | Quyết định (`fixed`) | PR `seeded_regression` (`E-seeded_regression-20261118-6a6a`) | Paired $\Delta$ & 95% CI (`seeded - swarm`) | Quyết định (`seeded_regression`) |
 |---|---|---|---|---|---|---|---|
 | `approval_bypass` | `0` | `0` | — | `ok` | `0` | — | `ok` |
 | `secret_leak` | `0` | `0` | — | `ok` | `0` | — | `ok` |
